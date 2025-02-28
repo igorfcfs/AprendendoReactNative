@@ -12,4 +12,3 @@ export default function Rotas() {
     </Drawer.Navigator>
   );
 }
-

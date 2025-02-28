@@ -1,13 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import Rotas from './Rotas';
+import {NavigationContainer} from '@react-navigation/native'
 
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer style={styles.container}>
+      <Rotas />
+    </NavigationContainer>
   );
 }
 
@@ -18,4 +19,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  txtInput: {
+    padding: 10,
+    borderWidth: 1,
+    width: '80%',
+    marginTop: 10
+  },
+  btnClick: {
+    padding: 10,
+    backgroundColor: 'red',
+    borderRadius: 10,
+    marginTop: 10
+  }
 });

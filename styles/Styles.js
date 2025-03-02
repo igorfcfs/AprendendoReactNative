@@ -13,7 +13,7 @@ export default StyleSheet.create({
     borderWidth: 2,
     borderColor: 'red',
     padding: 10,
-    marginBottom: 20
+    marginBottom: 20,
   },
-  ...general
+  ...general,
 });

@@ -20,10 +20,21 @@ class DimensoesFixas extends React.Component {
         3. justify-content: flex-end -> alinha os items ao FINAL do contêiner
         4. justify-content: space-between -> cria uma ESPAÇAMENTO IGUAL ENTRE os elementos, mantendo o primeiro grudado no início e o último no final.
         5. justify-content: space-around -> cria uma ESPAÇAMENTO ENTRE os elementos. Os espaçamentos do meio são 2 vezes maiores que o inicial e final. */}
-        <View style={{width: '100%', height: '100%', flexDirection: 'column', justifyContent: 'space-between'}}>
-          <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-          <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-          <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+        <View
+          style={{
+            width: '100%',
+            height: '100%',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+          }}
+        >
+          <View
+            style={{ width: 50, height: 50, backgroundColor: 'powderblue' }}
+          />
+          <View style={{ width: 50, height: 50, backgroundColor: 'skyblue' }} />
+          <View
+            style={{ width: 50, height: 50, backgroundColor: 'steelblue' }}
+          />
         </View>
       </View>
     );

@@ -21,7 +21,15 @@ class DimensoesFixas extends React.Component {
         3. align-item: flex-end -> alinha os itens ao FINAL
         4. align-item: center -> alinha os itens ao CENTRO
         5. align-item: baseline -> alinha os itens de acordo com a linha base da tipografia */}
-        <View style={{ width: '100%', height: '100%', flexDirection: 'column', justifyContent: 'center', alignItems: 'stretch' }}>
+        <View
+          style={{
+            width: '100%',
+            height: '100%',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'stretch',
+          }}
+        >
           <View style={{ height: 50, backgroundColor: 'powderblue' }} />
           <View style={{ height: 50, backgroundColor: 'skyblue' }} />
           <View style={{ height: 50, backgroundColor: 'steelblue' }} />

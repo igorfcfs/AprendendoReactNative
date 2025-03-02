@@ -4,7 +4,7 @@ const cores = {
   header: '#333333',
   primario: '#069',
   background: 'pink',
-  text: 'green'
-}
+  text: 'green',
+};
 
 export default cores;

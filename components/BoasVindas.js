@@ -22,6 +22,6 @@ export default function BoasVindas(props) {
 //FORMA CORRETA DE APLICAR O CSS-IN-JS EM COMPONENTES
 const styles = StyleSheet.create({
   texto: {
-    fontWeight: 10
-  }
-})
+    fontWeight: 10,
+  },
+});

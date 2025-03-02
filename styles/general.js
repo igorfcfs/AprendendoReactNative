@@ -17,8 +17,8 @@ const geral = {
     fontWeight: 'bold',
     fontSize: fonts.regular,
     alignSelf: 'center',
-    marginBottom: metrics.doubleBaseMargin
-  }
-}
+    marginBottom: metrics.doubleBaseMargin,
+  },
+};
 
 export default geral;

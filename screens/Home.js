@@ -1,3 +1,6 @@
+/* eslint-disable react-native/no-color-literals */
+/* eslint-disable prettier/prettier */
+/* eslint-disable react-native/no-inline-styles */
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import {
@@ -8,13 +11,16 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import BoasVindas from '../components/BoasVindas';
+import ChecaNumero from '../components/ChecaNumero';
 
 export default function Home() {
   const [nome, setNome] = useState('');
+  const [numero, setNumero] = useState('');
 
   return (
     <View style={styles.container}>
-      <BoasVindas nome="Igor" />
+      <BoasVindas nome={nome} />
+      <ChecaNumero numero={numero} />
       <Text>Aplicando conhecimentos do livro do React Native</Text>
       <StatusBar style="auto" />
       <TextInput
@@ -22,6 +28,10 @@ export default function Home() {
         placeholder="Nome"
         onChangeText={(nome) => setNome(nome)}
       />
+      <TextInput
+        style={styles.txtInput}
+        placeholder='Número'
+        onChangeText={(numero) => setNumero(numero)} />
       <TouchableOpacity
         style={styles.btnClick}
         onPress={() => alert(`Olá ${nome}`)}

@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import BoasVindas from '../components/BoasVindas';
 import ChecaNumero from '../components/ChecaNumero';
+import Evento from '../components/Evento';
 
 export default function Home() {
   const [nome, setNome] = useState('');

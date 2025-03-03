@@ -1,12 +1,19 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import Rotas from './Rotas';
-import { NavigationContainer } from '@react-navigation/native';
+import LoginStack from './components/LoginStack';
+import { NavigationContainer } from '@react-navigation/native'; //CONTÊINER PARA OS MENUS QUE QUISERMOS USAR NA APLICAÇÃO
+import { createStackNavigator } from '@react-navigation/stack'
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer style={styles.container}>
-      <Rotas />
+    <NavigationContainer screenOptions={{ headerShown: false }}>
+      <Stack.Navigator>
+        <Stack.Screen name='Login' component={LoginStack} />
+        <Stack.Screen name='Rotas' component={Rotas} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }

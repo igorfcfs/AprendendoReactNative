@@ -13,15 +13,31 @@ OS ESTADOS SÃO USADOS SEMPRE QUE UM COMPONENTE FOR ARMAZENAR DADOS QUE SERÃO A
   - CONTROLADOS: O estado do componente é armazenado no state do React e atualizado via onChange -> SÃO AQUELES CAPAZES DE ADMINISTRAR SEU PRÓPRIO VALOR POR MEIO DOS ESTADOS, ELE É AUTOSSUFICIENTE, NÃO PRECISA QUE NINGUÉM INDIQUE SEU VALOR
   - NÃO CONTROLADOS: O estado não é gerenciado pelo React, mas diretamente pelo DOM nativo (ou no caso do React Native, pelos componentes nativos).
 */
+
+/*CICLO DE VIDA DOS COMPONENTES
+- MONTAGEM (MOUNTING)
+- ATUALIZAÇÃO (UPDATING)
+- DESMONTAGEM (UNMOUTING)
+- ERROS (ERROR HANDLING)
+*/
 class Evento extends React.Component {
-  state = {
-    input: '',
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: ''
+    }
+    this.alteraInput = this.alteraInput.bind(this);
   }
+
+  alteraInput(input) {
+    this.setState({input});
+  }
+
   render(){
     return(
       <View style={styles.container}>
         <Text style={styles.font30}>{this.state.input}</Text>
-        <TextInput style={styles.input} value={this.state.input} onChangeText={(input) => this.setState({input})}></TextInput>
+        <TextInput style={styles.input} value={this.state.input} onChangeText={this.alteraInput}></TextInput>
       </View>
     )
   }

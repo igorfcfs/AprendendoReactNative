@@ -1,7 +1,6 @@
 import HomeScreen from './screens/Home';
 import ProfileScreen from './screens/Profile';
-import EventsScreen from './screens/Events'
-import APIScreen from './screens/GithubAPI'
+import Contador from './screens/Contador';
 import { createDrawerNavigator } from '@react-navigation/drawer'; //CRIA TODA A ESTRUTURA DO MENU
 import APIEventsNavigation from './APIEventsNavigation';
 import FirebaseNavigation from './FirebaseNavigation';
@@ -28,6 +27,7 @@ export default function Rotas() {
       <Drawer.Screen name="Profile" component={ProfileScreen} />
       <Drawer.Screen name="API & Events" component={APIEventsNavigation} />
       <Drawer.Screen name="Lista de Linguagens - FIREBASE" component={FirebaseNavigation} />
+      <Drawer.Screen name="Contador - Hooks" component={Contador} />
     </Drawer.Navigator>
   );
 }

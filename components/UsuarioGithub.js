@@ -4,6 +4,13 @@ import {View, Text, TextInput, Button, StyleSheet} from 'react-native';
 /*REQUISIÇÕES AJAX E APIS
 - AJAX -> ASYNCHRONOUS JAVASCRIPT AND XML -ferramenta JavaScript para fazer requisições web e alterar uma página/tela de forma dinâmica (sem a necessidade de carregá-la inteira novamente - só uma parte dela).
 */
+
+/*PROPRIEDADES DOS BOTÕES (BUTTON)
+- onPress: apontar qual função o botão deve executar quando clicado
+- title: título do botão
+- colot: cor do botão
+- accessibilityLabel: label complementar para acessibilidade
+*/
 class UsuarioGithub extends React.Component {
   constructor(props) {
     super(props),

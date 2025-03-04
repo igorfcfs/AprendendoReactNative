@@ -9,8 +9,8 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer screenOptions={{ headerShown: false }}>
-      <Stack.Navigator>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name='Login' component={LoginStack} />
         <Stack.Screen name='Rotas' component={Rotas} />
       </Stack.Navigator>
